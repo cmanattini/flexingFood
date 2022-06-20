@@ -10,7 +10,8 @@
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(20, 163, 163);
+    background-image: linear-gradient(to left, rgb(20, 163, 163), rgb(255, 255, 255) , rgb(255, 255, 255));
     display: block;
     border-bottom: 2px double rgb(4, 93, 128);
     justify-content: center;
@@ -19,8 +20,8 @@ header {
 
 /*incorporamos flex en header, arreglamos medidas*/
 }
-.animacion-header{
-    background-image: linear-gradient(to left, rgb(20, 163, 163), rgb(255, 255, 255) , rgb(255, 255, 255));
+#animacion-header{
+    background-image: linear-gradient(to left, rgb(7, 136, 136), rgb(75, 206, 211) , rgb(255, 255, 255));
 }
 
 #animacion-footer{
@@ -50,12 +51,13 @@ header ul li{
     position: relative;
 }
 .estilo-pagina {
-    background-color: rgb(21, 186, 192);
+    background-color: rgb(15, 242, 250);
     border-radius: 10px;
     border:3px solid #06515e;
     padding: 5px;
     color: rgb(21, 74, 121);
     font-weight: bold;    
+    
 }
 
 .estilo-pagina:hover{
@@ -72,15 +74,16 @@ header ul li{
 
 
 
-article {
+ article{
     background-image: url("https://img.freepik.com/foto-gratis/telon-fondo-textura-aqua_23-2147876085.jpg?size=626&ext=jpg"); 
     background-repeat:repeat;
     background-size: 100%;
     text-align: center;
     margin: auto;
-    padding: 1px;
+    padding: 25px;
     color: rgb(0, 0, 0);
     background-color: aquamarine;
+    justify-content: center;
    
 }
 
@@ -104,8 +107,8 @@ article iframe {
 
 
 
-.clase-tit
-.img-nosotros{
+
+.img-nosotros{ 
     border-radius: 10px;
     border-color: rgb(3, 74, 95);
     width: 300px;
@@ -145,6 +148,10 @@ article iframe {
     
 }
 
+.fotos-galery{
+    width: 350px;
+    height: 350px;
+}
 .img-Galery:hover{
         height:250px;
         width:250px;
@@ -209,9 +216,9 @@ footer ul{
     list-style-type:none;
     width: 800px;
     height: 400px;
-    margin-left:auto
-    padding: 10px;
-    border: 5px;
+    margin-left:auto;
+    padding-top: 25px;
+    border: 10px;
 }
 .formulario-list{
     
@@ -326,6 +333,12 @@ footer ul{
 
 }
 
+@media screen and {(min-width:0px) and (max-width: 650px)
+    .img-nosotros{
+        width: 100px;
+        height: 100px;
+    }
+}
        
 
     

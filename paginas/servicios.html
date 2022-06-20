@@ -7,30 +7,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel= "stylesheet" type="text/css" href="../css/style css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Heebo:display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <title>Document</title>
 </head>
 <body>
   <Div>
-   <header>
-     <nav class="animacion-header">
-       <ul>
-         <li><a href="..\index.html"><img src="..\imagen/flexingfood.jpg" class="imagenFlex"></a></li>
-         <li class="estilo-pagina"><a href="..\index.html">HOME</a> </li>
-         <li class="estilo-pagina"><a href="nosotros.html">NOSOTROS</a></li>
-         <li class="estilo-pagina"><a href="servicios.html">SERVICIOS</a></li>
-         <li class="estilo-pagina"><a href="galeria.HTML">GALERIA</a></li>
-         <li class="estilo-pagina"><a href="contacto.html">CONTACTO</a></li>
-       </ul>
-   </nav>
-  </header>    
+    <header class="justifyc-content-around"> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="animacion-header">
+          <a class="navbar-brand" href="../index.html"><img src="../imagen/logo.png" class="imagenFlex"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" class="justifyc-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item active"><a class="nav-link" href="..\index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="galeria.HTML">GALERIA</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+          </ul>
+          </div>
+      </nav>
+    </header>   
 
-  <article>
-      <div><h1 class="clase-titulo">NUESTROS PRODUCTOS</h1>
+  <article class="row">
+      <div class="row"><h1 class="clase-titulo">NUESTROS PRODUCTOS</h1>
       </div>
 
   
-      <div id="flex-tabla-serv">
-          <div class="serv-flex">
+      <div class="row" id="flex-tabla-serv">
+          <div class="col-md-2 col-ms-3 col-xs-6"class="serv-flex">
             <h3>VIANDAS</h3>
             <img class="imgServ" src="..\imagen/servicio/serv1.jpg" width="150x150">         
             <p class="nos-p2">Flexing Food te ofrece diferentes variedades de viandas:</p>
@@ -39,7 +45,7 @@
             <p class="nos-p2">Mujer Alta en carbohidratos: contiene 44gr de proteína(150 gr de pechuga  y 200gr de carbohidratos complejos(arroz, papa, fideo integral)</p>
             <p class="nos-p2">Mujer Baja en carbohidratos: contiene 44gr de proteína(150 gr de pechuga y verduras de estación)</p>
           </div>
-          <div class="serv-flex">
+          <div class="col-md-2 col-ms-3 col-xs-6" class="serv-flex">
             <h3>BUDINES</h3>
             <img class="imgServ" src="..\imagen/servicio/serv2.jpg" width="150x150"> 
             <p class="nos-p2">Dulce, rico y Saludable</p>
@@ -50,7 +56,7 @@
             <p class="nos-p2">Banana y Pasta de Mani</p>
             <p class="nos-p2">Contienen 24 gramos de proteínas, 56 gramos de carbohidratos </p>
           </div>
-          <div class="serv-flex">
+          <div  class="col-md-2 col-ms-3 col-xs-6" class="serv-flex">
             <h3>GRAPS DE POLLO</h3>
             <img class="imgServ" src="..\imagen/servicio/serv3.jpg" width="150x150">
             <p class="nos-p2"> Una explosión de sabor en tu boca y lo mejor de todo 100% saludable</p>
@@ -74,6 +80,8 @@
     </div>
   </footer>
 </Div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body> 
 </html>
         

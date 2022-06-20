@@ -6,50 +6,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel= "stylesheet" type="text/css" href="../css/style css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Heebo:display=swap" rel="stylesheet">
         <title>Document</title>
 </head>
 <body>
  <div>
-  <header>
-           
-      <nav class="animacion-header">
-        <ul>
-          <li><a href="..\index.html"><img src="..\imagen/flexingfood.jpg" class="imagenFlex"></a></li>
-          <li class="estilo-pagina"><a href="..\index.html">HOME</a> </li>
-          <li class="estilo-pagina"><a href="./nosotros.html">NOSOTROS</a></li>
-          <li class="estilo-pagina"><a href="./servicios.html">SERVICIOS</a></li>
-          <li class="estilo-pagina"><a href="./galeria.HTML">GALERIA</a></li>
-          <li class="estilo-pagina"><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-  </nav>
+  <header class="justifyc-content-around"> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="animacion-header">
+          <a class="navbar-brand" href="../index.html"><img src="../imagen/logo.png" class="imagenFlex"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" class="justifyc-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item active"><a class="nav-link" href="..\index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="galeria.HTML">GALERIA</a></li>
+            <li class="nav-item" class="estilo-pagina"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+          </ul>
+          </div>
+      </nav>
   </header>
-  
-
-  
-    <article class="imagen-fondo" id= "Grids-Galeria-article"  >
-      <div>
-            <h1 class="clase-titulo">GALERIA DE FOTOS</h1>
-      </div>
-      <div>
-            <h3 class="nos-p">Nuestros Productos</h3> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria1.jpg">
-            <img class="img-Galery" src="..\imagen/galeria/galeria2.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria3.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria4.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria5.jpg">
-            <img class="img-Galery" src="..\imagen/galeria/galeria10.jpg">   
-            <img class="img-Galery" src="..\imagen/galeria/galeria11.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria12.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria13.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria14.jpg"> 
       
-            <H3 class="nos-p">Otros</H3>
-            <img class="img-Galery" src="..\imagen/galeria/galeria9.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria7.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria8.jpg"> 
-            <img class="img-Galery" src="..\imagen/galeria/galeria99.jpg"> 
-      </div>      
+  <article class="imagen-fondo" id= "Grids-Galeria-article"  >
+    <div>
+      <h1 class="clase-titulo">GALERIA DE FOTOS</h1>
+      <h2 class="h2 text-ceterv mt-5 md-3">Nuestros Productos</h2>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..\imagen/galeria/galeria1.jpg" class="fotos-galery" class="d-block w-100" alt="vianda">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria2.jpg" class="fotos-galery" class="d-block w-100" alt="menu del dia">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria3.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria4.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria5.jpg" class="fotos-galery" class="d-block w-100" alt="vianda">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria10.jpg" class="fotos-galery" class="d-block w-100" alt="menu del dia">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria11.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria12.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria13.jpg" class="fotos-galery" class="d-block w-100" alt="menu del dia">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria14.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+        <div class="carousel-item">
+          <img src="..\imagen/galeria/galeria99.jpg" class="fotos-galery" class="d-block w-100" alt="otros productos">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>  
+         
   </article>
  
   <footer id="animacion-footer" class="footer-flexbox">
@@ -68,6 +100,8 @@
     </div>
 </footer>
  </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
         
