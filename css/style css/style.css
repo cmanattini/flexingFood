@@ -50,28 +50,6 @@ header ul li{
     height: 140px;
     position: relative;
 }
-.estilo-pagina {
-    background-color: rgb(15, 242, 250);
-    border-radius: 10px;
-    border:3px solid #06515e;
-    padding: 5px;
-    color: rgb(21, 74, 121);
-    font-weight: bold;    
-    
-}
-
-.estilo-pagina:hover{
-    background-color: rgb(166, 207, 235);
-}
-/*se mejoran los botones*/
-
-.content-galeria {
-    display: flex;
-    flex: 1;
-    flex-direction:row;
-    /*incorporamos content para separar article y aside(seccion noticias)*/
-  } 
-
 
 
  article{
@@ -103,10 +81,8 @@ article iframe {
     background-position: center;
     padding: 10px;
     margin: 5px;s
+
 }
-
-
-
 
 .img-nosotros{ 
     border-radius: 10px;
@@ -127,40 +103,31 @@ article iframe {
     width:260px;
     height:325px;
 }
-.galery-Flex{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:end;
-    flex:1;
-    flex-direction:column;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-.img-Galery {
-    border-radius: 6px;
-    border-color: rgb(3, 74, 95);
-    width: 90px;
-    height: 90px;
-    padding: 10px;
-    margin: 10px;
-    
-}
 
 .fotos-galery{
     width: 350px;
     height: 350px;
 }
-.img-Galery:hover{
-        height:250px;
-        width:250px;
+
+.fotos-galery:hover{
+        height:400px;
+        width:400px;
 }
 .nos-p{
     font-size: 20px;
     margin: 20px;
     padding: 60px;
     text-align:justify;
+    background-color: aquamarine;
+}
+
+.nos-p2{
+    font-size: 15px;
+    text-align:justify;
+    border-color: rgb(17, 109, 109);
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    
 }
 
 .footer-flexbox{
@@ -187,8 +154,12 @@ footer ul{
     margin-left: 30px;
     color:rgb(2, 2, 41);
     font-family: Arial, Helvetica, sans-serif;
-    background-position: right;
+    background-position: center;
 } 
+footer ul li{
+    justify-content: center;
+    padding-left: 10px;
+}
 
 .footer-a{
     text-align: right;
@@ -221,7 +192,6 @@ footer ul{
     border: 10px;
 }
 .formulario-list{
-    
     list-style-type:none;
 }
   
@@ -240,6 +210,10 @@ footer ul{
     margin-right: 30px;
 }
 
+.border{
+    border: 5px solid black;
+}
+
 #Grids-Galeria-article{
     display: grid;
     align-content: center;
@@ -248,18 +222,11 @@ footer ul{
 
 }
 
-
-.border{
-    border: 5px solid black;
-}
-
 #flex-tabla-serv{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
-
 }
 
 .serv-flex{
@@ -272,26 +239,20 @@ footer ul{
 @media screen and (min-width:0px) and (max-width: 500px)
  {
     header {
-        
         flex-direction:column;
-       
     } 
     }  
-
 
 @media screen and (min-width:0px) and (max-width: 500px)
  {
     header ul {
-        
         flex-direction:column;
-        
     } 
     }  
 
 @media screen and (min-width:0px) and (max-width: 500px)
     {
     footer {flex-direction:column;
-           
        } 
        }  
 
@@ -305,19 +266,15 @@ footer ul{
 @media screen and (min-width:0px) and (max-width: 500px)
     {
         #flex-tabla-serv {
-           
            flex-direction:column;
-        
        } 
        } 
 
-@media screen and (min-width:0px) and (max-width: 650px)
+@media screen and (min-width:0px) and (max-width: 550px)
 {
     article iframe {
-        width: 300px;
-        height: 300px;}
-
-
+        width: 250px;
+        height: 250px;}
 }
 
 
@@ -329,8 +286,6 @@ footer ul{
         grid-template-columns: min-content;
         margin-left:10px;
     }
-
-
 }
 
 @media screen and {(min-width:0px) and (max-width: 650px)
