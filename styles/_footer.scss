@@ -1,0 +1,71 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$aquaOscuro;
+    padding-top: 10px;
+    justify-content:end;
+    flex-direction: row;
+  
+   
+    ul{
+        @include display-flex;
+        list-style-type: none;
+        position: relative;
+        font-size: 20px;
+        line-height: 25px;
+        padding: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+      
+    
+        li{
+            justify-content: map-get($estilos, centro );
+            padding-left: 10px;
+            color:rgb(2, 2, 41);
+            font-family: map-get($estilos, letra);
+            background-position: center;
+            position: relative;
+            list-style-type: none;
+        }
+    }
+    div{
+        margin: 0px,
+        a{
+            margin: 0px;
+        }   
+             img{
+                text-align: right;
+                float: right;
+                background-repeat: no-repeat;
+                width: 5rem;
+                height: 5rem;
+                padding: 10px;
+                margin: 20px;
+                &:hover{
+                        height: 5.5em;
+                        width: 5.5rem;
+                    }
+                }                
+            }            
+}
+    .footer-flexbox{
+        display: flex;
+        justify-content: map-get($estilos, centro );
+        flex-direction:row;
+        padding: 5px;
+    }
+ 
+
+
+    #animacion-footer{
+        background-image: linear-gradient(to right,$aqua ,$aquaOscuro );
+    }
+
+
+
+
+    
+    
+
+
+

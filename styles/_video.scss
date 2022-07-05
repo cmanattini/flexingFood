@@ -1,0 +1,23 @@
+
+
+article{
+    background-image: url("https://img.freepik.com/foto-gratis/telon-fondo-textura-aqua_23-2147876085.jpg?size=626&ext=jpg"); 
+    background-repeat:repeat;
+    background-size: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+    justify-content: center;
+    
+    iframe {
+        display: grid;
+        margin-left: auto;
+        border-radius: 5px;
+        width: 500px;
+        height: 500px;
+
+    
+    }
+}

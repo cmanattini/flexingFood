@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(20, 163, 163);
+    background-image: linear-gradient(to left, $aqua,$neutro , $neutro);
+    display: block;
+    border-bottom: 2px double rgb(4, 93, 128);
+    justify-content: centermap-get($estilos, centro );
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: map-get($estilos, centro );
+        margin-left: 0px;
+    }
+  
+        li .nav-item {
+            position: relative;
+            list-style-type: none;
+            font-size: 26px;
+            
+            
+        }
+    #animacion-header {
+        background-image: linear-gradient(to left,$aquaOscuro,$aqua,$neutro);
+    }
+
+
+    .imagenFlex {
+        width: ($width*2)+50;
+        height: ($heigth)+40px;
+        position: relative;
+    }
+
+  

@@ -10,7 +10,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(20, 163, 163);
-  background-image: linear-gradient(to left, rgb(20, 163, 163), rgb(255, 255, 255), rgb(255, 255, 255));
+  background-image: linear-gradient(to left, rgb(79, 221, 209), rgb(255, 255, 255), rgb(255, 255, 255));
   display: block;
   border-bottom: 2px double rgb(4, 93, 128);
   justify-content: center;
@@ -26,18 +26,21 @@ ul {
   margin-left: 0px;
 }
 
-li {
+li #nav-item {
   position: relative;
   list-style-type: none;
   font-size: 26px;
+  border-bottom: red, solid, 15px;
 }
 
 #animacion-header {
-  background-image: linear-gradient(to left, rgb(7, 136, 136), rgb(75, 206, 211), rgb(255, 255, 255));
+  background-image: linear-gradient(to left, rgb(17, 105, 101), rgb(79, 221, 209), rgb(255, 255, 255));
 }
 
-#animacion-footer {
-  background-image: linear-gradient(to right, rgb(17, 105, 101), rgb(79, 221, 209));
+.imagenFlex {
+  width: 250px;
+  height: 140px;
+  position: relative;
 }
 
 article {
@@ -51,8 +54,7 @@ article {
   background-color: aquamarine;
   justify-content: center;
 }
-
-iframe {
+article iframe {
   display: grid;
   margin-left: auto;
   border-radius: 5px;
@@ -60,16 +62,48 @@ iframe {
   height: 500px;
 }
 
+.imgServ {
+  border-radius: 20px;
+  border-color: rgb(3, 74, 95);
+  width: 160px;
+  height: 225px;
+}
+.imgServ:hover {
+  width: 200px;
+  height: 265px;
+}
+
+.serv-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.nos-p2 {
+  font-size: 15px;
+  text-align: justify;
+  border-color: rgb(17, 109, 109);
+  font-family: Arial, Helvetica, sans-serif;
+  background-position: center;
+}
+
+#flex-tabla-serv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(8, 129, 145);
+  background-color: rgb(17, 105, 101);
   padding-top: 10px;
   justify-content: end;
   flex-direction: row;
 }
-
-ul {
+footer ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -81,8 +115,7 @@ ul {
   margin-right: 30px;
   margin-left: 30px;
 }
-
-li {
+footer ul li {
   justify-content: center;
   padding-left: 10px;
   color: rgb(2, 2, 41);
@@ -91,31 +124,33 @@ li {
   position: relative;
   list-style-type: none;
 }
-
-.footer-a:hover {
+footer div {
+  margin: 0px, a;
+  margin-margin: 0px;
+}
+footer div img {
   text-align: right;
   float: right;
   background-repeat: no-repeat;
-  width: 10x;
-  height: 10px;
-  padding: 10px;
-}
-
-#medida {
-  height: 5rem;
   width: 5rem;
+  height: 5rem;
+  padding: 10px;
   margin: 20px;
 }
-
-.footer-a:hover {
-  height: 15px;
-  width: 15px;
+footer div img:hover {
+  height: 5.5em;
+  width: 5.5rem;
 }
 
-.imagenFlex {
-  width: 250px;
-  height: 140px;
-  position: relative;
+.footer-flexbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+}
+
+#animacion-footer {
+  background-image: linear-gradient(to right, rgb(79, 221, 209), rgb(17, 105, 101));
 }
 
 .clase-titulo {
@@ -136,23 +171,11 @@ li {
   margin: 5px;
 }
 
-.imgServ {
-  border-radius: 20px;
-  border-color: rgb(3, 74, 95);
-  width: 160px;
-  height: 225px;
-}
-
-.imgServ:hover {
-  width: 200px;
-  height: 265px;
-}
-
 .fotos-galery {
   width: 350px;
   height: 350px;
+  border-radius: 20px;
 }
-
 .fotos-galery:hover {
   height: 400px;
   width: 400px;
@@ -160,25 +183,10 @@ li {
 
 .nos-p {
   font-size: 20px;
-  margin: 20px;
+  margin: 25px;
   padding: 60px;
   text-align: justify;
   background-color: aquamarine;
-}
-
-.nos-p2 {
-  font-size: 15px;
-  text-align: justify;
-  border-color: rgb(17, 109, 109);
-  font-family: Arial, Helvetica, sans-serif;
-  background-position: center;
-}
-
-.footer-flexbox {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  padding: 5px;
 }
 
 .form {
@@ -220,20 +228,6 @@ li {
   align-content: center;
   grid-column: auto;
   justify-content: baseline;
-}
-
-#flex-tabla-serv {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.serv-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {

@@ -1,0 +1,44 @@
+article{
+    div{
+        .clase-titulo {   
+            font-weight: 100%;
+            font-style: oblique;
+            font-size: 40px;
+            background-position: map-get($estilos, centro );
+            padding: $padding;
+            margin: $margin
+        
+    }
+}
+
+.imgServ{
+        border-radius: 20px;
+        border-color: rgb(3, 74, 95);
+        width: ($Whidth*2)-40px;
+        height: ($Heigth*2)+25px;
+        &:hover {
+        width:($Whidth*2);
+        height:($Heigth*2)+65px;
+        }
+    }    
+    .serv-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: map-get($estilos, centro );
+        width: ($Whidth*3);
+    }
+    .nos-p2{
+        font-size: 15px;
+        text-align:justify;
+        border-color: rgb(17, 109, 109);
+        font-family: map-get($estilos, letra);
+        background-position: map-get($estilos, centro );
+    }
+    #flex-tabla-serv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}

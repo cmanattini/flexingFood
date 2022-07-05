@@ -1,191 +1,44 @@
-*{
-    margin: auto;
-    padding: 0;
-    border: 0;
-    text-decoration:none;
-    font-family: "Heebo", sans-serif;
-        }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(20, 163, 163);
-    background-image: linear-gradient(to left, rgb(20, 163, 163), rgb(255, 255, 255) , rgb(255, 255, 255));
-    display: block;
-    border-bottom: 2px double rgb(4, 93, 128);
-    justify-content: center;
-    flex-direction:row;
-    align-items: flex-end;
-}
+@import "./fondo";
+@import "./variables";
+@import "./reset";
+@import "./medidas";
+@import"./mixin";
+@import "./header";
+@import "./video";
+@import "./pageServicios";
+@import "./footer";
 
 
-    ul{
-    display:flex;
-    justify-content:space-around;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 0px;
-    }
-        li{
-            position: relative;
-            list-style-type: none;
-            font-size: 26px;
-        }
+
         
-
-
-#animacion-header{
-    background-image: linear-gradient(to left, rgb(7, 136, 136), rgb(75, 206, 211) , rgb(255, 255, 255));
-}
-
-#animacion-footer{
-    background-image: linear-gradient(to right, rgb(17, 105, 101), rgb(79, 221, 209));
-}
-
-article{
-    background-image: url("https://img.freepik.com/foto-gratis/telon-fondo-textura-aqua_23-2147876085.jpg?size=626&ext=jpg"); 
-    background-repeat:repeat;
-    background-size: 100%;
-    text-align: center;
-    margin: auto;
-    padding: 25px;
-    color: rgb(0, 0, 0);
-    background-color: aquamarine;
-    justify-content: center;
-}
-    iframe {
-        display: grid;
-        margin-left: auto;
-        border-radius: 5px;
-        width: 500px;
-        height: 500px;
-    }
-   
-
-footer{
-        display: flex;
-        flex-wrap: wrap;
-        background-color:rgb(8, 129, 145);
-        padding-top: 10px;
-        justify-content:end;
-        flex-direction: row;
-      
-}   
-    ul{
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        flex-direction: column;
-        position: relative;
-        font-size: 20px;
-        line-height: 25px;
-        padding: 20px;
-        margin-right: 30px;
-        margin-left: 30px;
-          
-    } 
-        li{
-            justify-content: center;
-            padding-left: 10px;
-            color:rgb(2, 2, 41);
-            font-family: Arial, Helvetica, sans-serif;
-            background-position: center;
-            position: relative;
-            list-style-type: none;
-
-        }
-
-            
-    .footer-a:hover{
-            text-align: right;
-            float: right;
-            background-repeat: no-repeat;
-            width: 10x;
-            height: 10px;
-            padding: 10px;
-            
-    }
-    #medida{
-        height:5rem;
-        width: 5rem;
-        margin: 20px;
-    }
-
-    .footer-a:hover{
-            height:15px;
-            width: 15px;
-    }
-
-    .imagenFlex {
-            width: 250px;
-            height: 140px;
-            position: relative;
-        }
-
-        .clase-titulo {   
-            font-weight: 100%;
-            font-style: oblique;
-            font-size: 40px;
-            background-position: center;
-            padding: 10px;
-            margin: 5px;
-        
-        }
         
         .img-nosotros{ 
             border-radius: 10px;
             border-color: rgb(3, 74, 95);
-            width: 300px;
-            height: 300px;
-            padding: 10px;
-            margin: 5px;
-        }
-        .imgServ{
-            border-radius: 20px;
-            border-color: rgb(3, 74, 95);
-            width: 160px;
-            height: 225px;
+            width: ($Whidth*3);
+            height: ($Heigth*3);
+            padding: $padding;
+            margin: $margin;
         }
         
-        .imgServ:hover {
-            width:200px;
-            height:265px;
-        }
-        
+
         .fotos-galery{
-            width: 350px;
-            height: 350px;
-        }
-        
-        .fotos-galery:hover{
-                height:400px;
-                width:400px;
+            width: ($Whidth*3)+50px;
+            height: ($Heigth*3)+50px;
+            border-radius:20px;
+            &:hover{
+                height:($Heigth*4);
+                width:($Whidth*4);
+            }
         }
         .nos-p{
             font-size: 20px;
-            margin: 20px;
-            padding: 60px;
+            margin: ($margin*5);
+            padding: ($padding*6);
             text-align:justify;
             background-color: aquamarine;
         }
-        
-        .nos-p2{
-            font-size: 15px;
-            text-align:justify;
-            border-color: rgb(17, 109, 109);
-            font-family: Arial, Helvetica, sans-serif;
-            background-position: center;
-            
-        }
-        
-        .footer-flexbox{
-            display: flex;
-            justify-content: center;
-            flex-direction:row;
-            padding: 5px;
-        }
-        
- 
         
         .form{
             display:grid;
@@ -193,11 +46,11 @@ footer{
             grid-area: auto;
             align-content:center;
             list-style-type:none;
-            width: 800px;
-            height: 400px;
+            width: ($Whidth*8);
+            height: ($Heigth*4);
             margin-left:auto;
-            padding-top: 25px;
-            border: 10px;
+            padding-top: ($padding*2)+5px;
+            border: $border;
         }
         .formulario-list{
             list-style-type:none;
@@ -207,19 +60,13 @@ footer{
         
         .imput{
             border-radius: 10px;
-            padding: 5px;
+            padding: ($padding/2);
             font-size: 15px;
         }
         
-        .boton{
-            display: inline;
-            padding: 10px;
-            margin-left: 30px;
-            margin-right: 30px;
-        }
         
         .border{
-            border: 5px solid black;
+            border: ($border/2) solid black;
         }
         
         #Grids-Galeria-article{
@@ -230,19 +77,9 @@ footer{
         
         }
         
-        #flex-tabla-serv{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+       
         
-        .serv-flex{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
-        }
+        
         
         @media screen and (min-width:0px) and (max-width: 500px)
          {
@@ -282,8 +119,8 @@ footer{
         @media screen and (min-width:0px) and (max-width: 550px)
         {
             article iframe {
-                width: 250px;
-                height: 250px;
+                width: ($Whidth*2)+50px;
+                height: ($Whidth*2)+50px;
             }
         }
         
@@ -300,8 +137,8 @@ footer{
         
         @media screen and (min-width:0px) and (max-width: 650px)
         {    .img-nosotros{
-                width: 100px;
-                height: 100px;
+                width: $Whidth;
+                height: $Heigth
             }
         }
                
