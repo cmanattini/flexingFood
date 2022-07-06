@@ -19,7 +19,7 @@ footer{
       
     
         li{
-            justify-content: map-get($estilos, centro );
+            justify-content: map-get($estilos, centro);
             padding-left: 10px;
             color:rgb(2, 2, 41);
             font-family: map-get($estilos, letra);

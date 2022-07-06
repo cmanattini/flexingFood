@@ -5,6 +5,70 @@ $neutro:rgb(255, 255, 255);
 
 $estilos: (
     centro:center,
-    letra: Arial, Helvetica, sans-serif,
+    letra:"Arial, Helvetica, sans-serif");
   
-)
+
+
+.img-nosotros{ 
+    border-radius: 10px;
+    border-color: rgb(3, 74, 95);
+    width: (300px);
+    height: (300px);
+    padding: "$padding";
+    margin: "$margin";
+}
+
+
+.fotos-galery{
+    width: 350px;
+    height: 350px;
+    border-radius:20px;
+    &:hover{
+        height:(400px);
+        width:400px;
+    }
+}
+.nos-p{
+    font-size: 20px;
+    margin:("$margin*5");
+    padding:("$padding*6");
+    text-align:justify;
+    background-color: aquamarine;
+}
+
+.form{
+    display:grid;
+    grid-template-rows: auto;
+    grid-area: auto;
+    align-content:center;
+    list-style-type:none;
+    width: ("$Whidth*8");
+    height: ("$Heigth*4");
+    margin-left:auto;
+    padding-top: "($padding*2)+5px";
+    border: "$border";
+}
+.formulario-list{
+    list-style-type:none;
+}
+  
+
+
+.imput{
+    border-radius: 10px;
+    padding: ("$padding/2");
+    font-size: 15px;
+}
+
+
+.border{
+    border: ("$border/2") solid black;
+}
+
+#Grids-Galeria-article{
+    display: grid;
+    align-content: center;
+    grid-column:auto;
+    justify-content: baseline;
+
+}

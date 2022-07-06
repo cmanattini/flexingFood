@@ -1,7 +1,3 @@
-@mixin sizes($width, $heigth){
-height: $heigth;
-width: $width;
-}
 
 @mixin display-flex{
     display: flex;

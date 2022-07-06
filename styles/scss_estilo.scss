@@ -1,9 +1,8 @@
-
-@import "./fondo";
 @import "./variables";
 @import "./reset";
 @import "./medidas";
 @import"./mixin";
+@import "./query";
 @import "./header";
 @import "./video";
 @import "./pageServicios";
@@ -13,134 +12,10 @@
 
         
         
-        .img-nosotros{ 
-            border-radius: 10px;
-            border-color: rgb(3, 74, 95);
-            width: ($Whidth*3);
-            height: ($Heigth*3);
-            padding: $padding;
-            margin: $margin;
-        }
-        
-
-        .fotos-galery{
-            width: ($Whidth*3)+50px;
-            height: ($Heigth*3)+50px;
-            border-radius:20px;
-            &:hover{
-                height:($Heigth*4);
-                width:($Whidth*4);
-            }
-        }
-        .nos-p{
-            font-size: 20px;
-            margin: ($margin*5);
-            padding: ($padding*6);
-            text-align:justify;
-            background-color: aquamarine;
-        }
-        
-        .form{
-            display:grid;
-            grid-template-rows: auto;
-            grid-area: auto;
-            align-content:center;
-            list-style-type:none;
-            width: ($Whidth*8);
-            height: ($Heigth*4);
-            margin-left:auto;
-            padding-top: ($padding*2)+5px;
-            border: $border;
-        }
-        .formulario-list{
-            list-style-type:none;
-        }
-          
-        
-        
-        .imput{
-            border-radius: 10px;
-            padding: ($padding/2);
-            font-size: 15px;
-        }
-        
-        
-        .border{
-            border: ($border/2) solid black;
-        }
-        
-        #Grids-Galeria-article{
-            display: grid;
-            align-content: center;
-            grid-column:auto;
-            justify-content: baseline;
-        
-        }
         
        
         
         
-        
-        @media screen and (min-width:0px) and (max-width: 500px)
-         {
-            header {
-                flex-direction:column;
-            } 
-            }  
-           
-
-        @media screen and (min-width:0px) and (max-width: 500px)
-         {
-            header ul {
-                flex-direction:column;
-            } 
-        }  
-        
-        @media screen and (min-width:0px) and (max-width: 500px)
-        {
-            footer {flex-direction:column;
-               } 
-        }  
-        
-        @media screen and (min-width:0px) and (max-width: 500px)
-        {
-            .footer-flexbox {flex-direction:column;
-                   
-            } 
-        }  
-        
-        @media screen and (min-width:0px) and (max-width: 500px)
-        {
-                #flex-tabla-serv {
-                   flex-direction:column;
-               } 
-        } 
-        
-        @media screen and (min-width:0px) and (max-width: 550px)
-        {
-            article iframe {
-                width: ($Whidth*2)+50px;
-                height: ($Whidth*2)+50px;
-            }
-        }
-        
-        
-        @media screen and (min-width:0px) and (max-width: 650px)
-        {
-            .form{
-                grid-column: auto;
-                grid-area: auto;
-                grid-template-columns: min-content;
-                margin-left:10px;
-            }
-        }
-        
-        @media screen and (min-width:0px) and (max-width: 650px)
-        {    .img-nosotros{
-                width: $Whidth;
-                height: $Heigth
-            }
-        }
                
         
             
