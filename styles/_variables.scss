@@ -1,21 +1,19 @@
 $aqua: rgb(79, 221, 209);
 $aquaOscuro:rgb(17, 105, 101);
 $neutro:rgb(255, 255, 255);
-
-
 $estilos: (
     centro:center,
     letra:"Arial, Helvetica, sans-serif");
-  
 
+    
 
 .img-nosotros{ 
     border-radius: 10px;
     border-color: rgb(3, 74, 95);
     width: (300px);
     height: (300px);
-    padding: "$padding";
-    margin: "$margin";
+    padding: $padding;
+    margin:$margin;
 }
 
 
@@ -30,8 +28,8 @@ $estilos: (
 }
 .nos-p{
     font-size: 20px;
-    margin:("$margin*5");
-    padding:("$padding*6");
+    margin:($margin * 5);
+    padding:($padding * 6);
     text-align:justify;
     background-color: aquamarine;
 }
@@ -42,11 +40,11 @@ $estilos: (
     grid-area: auto;
     align-content:center;
     list-style-type:none;
-    width: ("$Whidth*8");
-    height: ("$Heigth*4");
+    width: ($Whidth * 8);
+    height: ($Heigth * 4);
     margin-left:auto;
-    padding-top: "($padding*2)+5px";
-    border: "$border";
+    padding-top: ($padding * 2)+5px;
+    border: $border;
 }
 .formulario-list{
     list-style-type:none;
@@ -56,13 +54,13 @@ $estilos: (
 
 .imput{
     border-radius: 10px;
-    padding: ("$padding/2");
+    padding:calc($padding / 2);
     font-size: 15px;
 }
 
 
 .border{
-    border: ("$border/2") solid black;
+    border: calc($border / 2) solid black;
 }
 
 #Grids-Galeria-article{

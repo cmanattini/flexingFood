@@ -3,8 +3,8 @@
   border-color: rgb(3, 74, 95);
   width: 300px;
   height: 300px;
-  padding: "$padding";
-  margin: "$margin";
+  padding: 10px;
+  margin: 5px;
 }
 
 .fotos-galery {
@@ -19,8 +19,8 @@
 
 .nos-p {
   font-size: 20px;
-  margin: "$margin*5";
-  padding: "$padding*6";
+  margin: 25px;
+  padding: 60px;
   text-align: justify;
   background-color: aquamarine;
 }
@@ -31,11 +31,11 @@
   grid-area: auto;
   align-content: center;
   list-style-type: none;
-  width: "$Whidth*8";
-  height: "$Heigth*4";
+  width: 800px;
+  height: 400px;
   margin-left: auto;
-  padding-top: "($padding*2)+5px";
-  border: "$border";
+  padding-top: 25px;
+  border: 10px;
 }
 
 .formulario-list {
@@ -44,12 +44,12 @@
 
 .imput {
   border-radius: 10px;
-  padding: "$padding/2";
+  padding: 5px;
   font-size: 15px;
 }
 
 .border {
-  border: "$border/2" solid black;
+  border: 5px solid black;
 }
 
 #Grids-Galeria-article {
@@ -144,8 +144,8 @@ li .nav-item {
 }
 
 .imagenFlex {
-  width: "($width*2)+50";
-  height: "($heigth)+40px";
+  width: 250px;
+  height: 140px;
   position: relative;
 }
 
@@ -234,10 +234,6 @@ footer ul li {
   background-position: center;
   position: relative;
   list-style-type: none;
-}
-footer div {
-  margin: 0px, a;
-  margin-margin: 0px;
 }
 footer div img {
   text-align: right;
