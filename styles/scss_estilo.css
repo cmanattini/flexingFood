@@ -1,8 +1,8 @@
 .img-nosotros {
   border-radius: 10px;
   border-color: rgb(3, 74, 95);
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   padding: 10px;
   margin: 5px;
 }
@@ -92,12 +92,6 @@
     flex-direction: column;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 550px) {
-  article iframe {
-    width: "($Whidth*2)+50px";
-    height: "($Whidth*2)+50px";
-  }
-}
 @media screen and (min-width: 0px) and (max-width: 650px) {
   .form {
     grid-column: auto;
@@ -107,10 +101,20 @@
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 650px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
   .img-nosotros {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  iframe {
+    border-radius: auto;
+    grid-column: auto;
     width: 100px;
     height: 100px;
+    grid-template-columns: -webkit-min-content;
+    grid-template-columns: min-content;
   }
 }
 header {
@@ -163,9 +167,11 @@ article {
 article iframe {
   display: grid;
   margin-left: auto;
+  justify-content: auto;
   border-radius: 5px;
   width: 500px;
   height: 500px;
+  grid-row: auto;
 }
 
 article div .clase-titulo {
@@ -211,7 +217,7 @@ footer {
   flex-wrap: wrap;
   background-color: rgb(17, 105, 101);
   padding-top: 10px;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: row;
 }
 footer ul {
@@ -245,7 +251,7 @@ footer div img {
   margin: 20px;
 }
 footer div img:hover {
-  height: 5.5em;
+  height: 5.5rem;
   width: 5.5rem;
 }
 

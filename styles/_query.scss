@@ -33,15 +33,9 @@
               } 
        } 
        
-       @media screen and (min-width:0px) and (max-width: 550px)
-       {
-           article iframe {
-               width: "($Whidth*2)+50px";
-               height: "($Whidth*2)+50px";
-           }
-       }
        
        
+      
        @media screen and (min-width:0px) and (max-width: 650px)
        {
            .form{
@@ -52,9 +46,23 @@
            }
        }
        
-       @media screen and (min-width:0px) and (max-width: 650px)
+       @media screen and (min-width:0px) and (max-width: 450px)
        {    .img-nosotros{
-               width: $Whidth;
-               height: $Heigth;
+               width: $Whidth* 2;
+               height: $Heigth* 2;
            }
        }
+
+       @media screen and (min-width:0px) and (max-width:550px)
+        {
+            iframe {
+               border-radius: auto;
+               grid-column: auto;
+               width: $Whidth;
+               height: $Heigth;
+               grid-template-columns: min-content;
+               
+           }
+        
+            }
+        

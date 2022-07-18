@@ -10,8 +10,8 @@ $estilos: (
 .img-nosotros{ 
     border-radius: 10px;
     border-color: rgb(3, 74, 95);
-    width: (300px);
-    height: (300px);
+    width: (350px);
+    height: (350px);
     padding: $padding;
     margin:$margin;
 }
@@ -21,9 +21,6 @@ $estilos: (
     width: 350px;
     height: 350px;
     border-radius:20px;
-    &:hover{
-        height:(400px);
-        width:400px;
     }
 }
 .nos-p{

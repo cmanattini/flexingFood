@@ -3,7 +3,7 @@ footer{
     flex-wrap: wrap;
     background-color:$aquaOscuro;
     padding-top: 10px;
-    justify-content:end;
+    justify-content:flex-end;
     flex-direction: row;
   
    
@@ -40,7 +40,7 @@ footer{
                 padding: 10px;
                 margin: 20px;
                 &:hover{
-                        height: 5.5em;
+                        height: 5.5rem;
                         width: 5.5rem;
                     }
                 }                

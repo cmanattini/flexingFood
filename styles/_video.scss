@@ -14,10 +14,12 @@ article{
     iframe {
         display: grid;
         margin-left: auto;
+        justify-content: auto;
         border-radius: 5px;
-        width: $Whidth* 5;
-        height: $Heigth* 5;
+        width: 500px;
+        height: 500px;
+        grid-row: auto;
 
-    
+        
     }
 }
