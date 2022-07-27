@@ -1,10 +1,7 @@
 footer{
-    display: flex;
-    flex-wrap: wrap;
     background-color:$aquaOscuro;
     padding-top: 10px;
-    justify-content:flex-end;
-    flex-direction: row;
+}
   
    
     ul{
@@ -29,9 +26,7 @@ footer{
         }
     }
     div{
-        
-          
-             img{
+             .img{
                 text-align: right;
                 float: right;
                 background-repeat: no-repeat;
@@ -39,13 +34,13 @@ footer{
                 height: 5rem;
                 padding: 10px;
                 margin: 20px;
+                transition: all 0.2s;
                 &:hover{
-                        height: 5.5rem;
-                        width: 5.5rem;
+                    transform: scale(1.2);
                     }
                 }                
             }            
-}
+
     .footer-flexbox{
         display: flex;
         justify-content: map-get($estilos, centro );
